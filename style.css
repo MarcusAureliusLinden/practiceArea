@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    border: 3px solid black;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(background.jpg);
+    overflow: hidden;
+    background-size: cover;
+}
+
+.score {
+    font-size: 100px;
+    color: blue;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.countdown {
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    font-size 20px;
+    text-align: center;
+    color: blue;
+}
+
+button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: white;
+    padding: 20px 50px;
+    border-radius: 5px;
+    z-index: 200;
+    cursor: pointer;
+    border: none;
+    outline: none; 
+}
+
+.game {
+    width: 600px;
+    height: 400px;
+    margin: 70px auto;
+    z-index: 200;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hole {
+    overflow: hidden;
+    flex: 1 0 33.33%;
+    position: relative;
+}
+
+.hole:after {
+    content: "";
+    display: block;
+    background-color: green;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    z-index: 2;
+    bottom: -30%;
+    background-size: contain;
+}
+
+.mole {
+    background-image: url("dog.jpg");
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.mole.small {
+    background-size: 60%;
+}
+
+.mole.large {
+    background-size: 80%;
+}
+
+.hole.up .mole {
+    top: 0;
+}
+

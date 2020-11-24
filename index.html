@@ -3,16 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Whack something</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="writeToDocument('people')">People</button>
-    <button onclick="writeToDocument('planets')">Planets</button>
-    <button onclick="writeToDocument('species')">Species</button>
-    <button onclick="writeToDocument('starships')">Starships</button>
-    <button onclick="writeToDocument('vehicles')">Vehicles</button>
-    <button onclick="writeToDocument('films')">Films</button>
-    <div id="data"></div>
+
+
+
+<div class="wrapper">
+    <div class="score">0</div>
+    <div class="countdown"></div>
+    <button class="startButton">Start Whacking!</button>
+
+    <div class="game">
+        <div class="hole hole1">
+            <div class="mole small"></div>
+        </div>
+        <div class="hole hole2">
+            <div class="mole small"></div>
+        </div>
+        <div class="hole hole3">
+            <div class="mole small"></div>
+        </div>
+        <div class="hole hole4">
+            <div class="mole large"></div>
+        </div>
+        <div class="hole hole5">
+            <div class="mole large"></div>
+        </div>
+        <div class="hole hole6">
+            <div class="mole large"></div>
+        </div>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
